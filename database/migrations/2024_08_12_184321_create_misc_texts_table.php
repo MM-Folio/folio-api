@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('misc_texts', function (Blueprint $table) {
-            $table->string('textId');
+            $table->id();
+            $table->string('textId')->unique();
             $table->text('text');
             $table->timestamps();
         });

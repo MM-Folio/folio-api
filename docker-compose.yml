@@ -1,0 +1,13 @@
+version: 3.7
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    networks:
+      - proxy
+networks:
+  proxy:
+    external: true

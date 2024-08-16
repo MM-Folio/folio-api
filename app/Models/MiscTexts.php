@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class MiscTexts extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'textId',
+        'text',
+    ];
+
+    
 }

@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\Genre;
-use App\Models\Pictures;
+use App\Models\Picture;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignIdFor(Pictures::class);
+            $table->foreignIdFor(Picture::class);
             $table->foreignIdFor(Genre::class);
             $table->string('location');
-            $table->string('description');
+            $table->string('description', 2000);
             $table->string('instaHandle');
             $table->string('ytEmbedUrl');
             $table->string('spotifyEmbedUrl');

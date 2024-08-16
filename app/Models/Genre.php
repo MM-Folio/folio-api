@@ -13,4 +13,6 @@ class Genre extends Model
         'name',
         'description',
     ];
+
+    protected $primaryKey = 'id';
 }

@@ -20,9 +20,11 @@ class Artist extends Model
         'spotifyEmbedUrl',
     ];
 
+    protected $primaryKey = 'id';
+
     public function picture()
     {
-        return $this->belongsTo(Pictures::class);
+        return $this->belongsTo(Picture::class);
     }
 
     public function genre()

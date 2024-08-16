@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('portfolios', function (Blueprint $table) {
-            $table->integer('id');
+            $table->id();
+            $table->string('title');
             $table->string('urlId');
             $table->timestamps();
         });
