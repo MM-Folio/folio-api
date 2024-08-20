@@ -22,7 +22,8 @@ class ArtistDTO extends JsonResource
             'description' => $this->description,
             'instaHandle' => $this->instaHandle,
             'ytEmbedUrl' => $this->ytEmbedUrl,
-            'spotifyEmbedUrl' => $this->spotifyEmbedUrl
+            'spotifyEmbedUrl' => $this->spotifyEmbedUrl,
+            'isBand' => $this->isBand,
         ];
     }
 }

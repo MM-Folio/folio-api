@@ -18,6 +18,7 @@ class Artist extends Model
         'instaHandle',
         'ytEmbedUrl',
         'spotifyEmbedUrl',
+        'isBand',
     ];
 
     protected $primaryKey = 'id';

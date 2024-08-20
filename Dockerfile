@@ -1,6 +1,6 @@
-FROM dunglas/frankenphp
+FROM php:8.3.7-fpm
 
-RUN install-php-exension \
+RUN install-php-extensions \
     pcntl \
     pdo_mysql \
     sodium \
@@ -16,7 +16,5 @@ RUN install-php-exension \
     session \
     tokenizer \
     xml 
-
-COPY . /app
 
 ENTRYPOINT ["php", "artisan", "octane:frankenphp"]

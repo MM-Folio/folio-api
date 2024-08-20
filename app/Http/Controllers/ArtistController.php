@@ -61,7 +61,8 @@ class ArtistController extends Controller
                 'description' => ['required', 'string'],
                 'instaHandle' => ['required', 'string', 'max:255'],
                 'ytEmbedUrl' => ['required', 'string'],
-                'spotifyEmbedUrl' => ['required', 'string']
+                'spotifyEmbedUrl' => ['required', 'string'],
+                'isBand' => ['required', 'boolean'],
             ])
         ]);
 
@@ -88,6 +89,7 @@ class ArtistController extends Controller
                 'instaHandle' => ['required', 'string', 'max:255'],
                 'ytEmbedUrl' => ['required', 'string'],
                 'spotifyEmbedUrl' => ['required', 'string'],
+                'isBand' => ['required', 'boolean'],
             ])]);
 
         return response()->json([

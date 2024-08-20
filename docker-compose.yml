@@ -1,13 +1,10 @@
-version: 3.7
+version: "3.7"
 services:
   api:
+    container_name: folioApi
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - .:/app
-    networks:
-      - proxy
-networks:
-  proxy:
-    external: true
+    

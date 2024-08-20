@@ -20,6 +20,7 @@ class ArtistIndexResource extends JsonResource
             'picture_url' => url('images/' . $this->picture->image),
             'genre' => $this->genre->name,
             'location' => $this->location,
+            'isBand' => $this->isBand,
         ];
     }
 }

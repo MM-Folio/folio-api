@@ -107,6 +107,7 @@ JSON Response:
             "picture_url": string,
             "genre": string,
             "location": string,
+            "isBand": boolean
         }
     ],
     "pagination": {
@@ -136,7 +137,8 @@ JSON Request:
     "description": string,
     "instaHandle": string,
     "ytEmbedUrl": string,
-    "spotifyEmbedUrl": string
+    "spotifyEmbedUrl": string,
+    "isBand": boolean
 }
 ```
 JSON Response:
@@ -168,7 +170,8 @@ JSON Response:
     "description": string,
     "instaHandle": string,
     "ytEmbedUrl": string,
-    "spotifyEmbedUrl": string
+    "spotifyEmbedUrl": string,
+    "isBand": boolean
 }
 ```
 Usage: Gives all information for a update
@@ -187,7 +190,8 @@ JSON Request:
     "description": string,
     "instaHandle": string,
     "ytEmbedUrl": string,
-    "spotifyEmbedUrl": string
+    "spotifyEmbedUrl": string,
+    "isBand": boolean
 }
 ```
 JSON Response:
@@ -278,7 +282,8 @@ JSON Response:
             "description": string,
             "instaHandle": string,
             "ytEmbedUrl": string,
-            "spotifyEmbedUrl": string
+            "spotifyEmbedUrl": string,
+            "isBand": boolean
         },
     ],
 }
